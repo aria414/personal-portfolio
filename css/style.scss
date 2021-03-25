@@ -68,6 +68,11 @@ header {
   z-index: 999;
   background: rgba(255, 255, 255, 0.9);
 
+  h1,
+  .mobile-nav {
+    margin-top: 2%;
+  }
+
   .mobile-nav {
     display: block;
     width: 100%;
@@ -160,7 +165,7 @@ main {
     .social-icons,
     .resume {
       display: flex;
-      width: 50%;
+      width: 60%;
       justify-content: center;
       color: white;
       margin: 10px auto;
@@ -168,7 +173,7 @@ main {
     }
     .social-icons li,
     .las.la-arrow-alt-circle-right {
-      font-size: 2em;
+      font-size: 2.5em;
       margin-left: 5%;
       color: white;
     }
@@ -182,15 +187,17 @@ main {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
       li {
         width: 50%;
         align-items: center;
         display: flex;
-        font-size: 0.9em;
+        font-size: 1em;
       }
+
       i {
-        font-size: 1.3em;
-        margin-right: 5%;
+        font-size: 1.5em;
+        margin-right: 7%;
       }
     }
   }

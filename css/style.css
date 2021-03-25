@@ -67,6 +67,11 @@ header {
   background: rgba(255, 255, 255, 0.9);
 }
 
+header h1,
+header .mobile-nav {
+  margin-top: 2%;
+}
+
 header .mobile-nav {
   display: block;
   width: 100%;
@@ -167,7 +172,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 60%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -180,7 +185,7 @@ main {
 
 #home .profile .social-icons li,
 #home .profile .las.la-arrow-alt-circle-right {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-left: 5%;
   color: white;
 }
@@ -209,12 +214,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 #home .skills ul i {
-  font-size: 1.3em;
-  margin-right: 5%;
+  font-size: 1.5em;
+  margin-right: 7%;
 }
 
 /* *******************************************
