@@ -63,6 +63,11 @@ p {
 header {
   width: 100%;
   height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.9);
+
   .mobile-nav {
     display: block;
     width: 100%;
@@ -120,9 +125,12 @@ header {
     }
   }
 }
+main {
+  margin-top: 60px;
+}
+
 #home {
   width: 100%;
-  border: 1px solid red;
 
   .profile {
     height: 50%;
@@ -168,7 +176,7 @@ header {
 
   .skills {
     padding: 5%;
-    line-height: 2em;
+    line-height: 3em;
 
     ul {
       display: flex;
@@ -178,9 +186,10 @@ header {
         width: 50%;
         align-items: center;
         display: flex;
+        font-size: 0.9em;
       }
       i {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-right: 5%;
       }
     }
