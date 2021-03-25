@@ -1,0 +1,230 @@
+/* *******************************************
+****** PROJECT SETUP
+******************************************* */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+/*
+font-family: 'Cormorant', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+/* VARIABLES */
+:root {
+  /* MAIN COLORS */
+  --main: black;
+  --secondary: white;
+  --accent: red;
+  /* FONTS */
+  --title: serif;
+  --text: aerial;
+}
+
+/* GLOBAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* outline: 2px solid gold; */
+}
+
+/* *******************************************
+****** GENERAL STYLES
+******************************************* */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Cormorant", serif;
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* *******************************************
+****** INDEX PAGE
+******************************************* */
+header {
+  width: 100%;
+  height: 60px;
+}
+
+header .mobile-nav {
+  display: block;
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  top: 0;
+}
+
+header .mobile-nav .las {
+  font-size: 2.5em;
+}
+
+header .mobile-nav .fas.fa-caret-left {
+  font-size: 2.5em;
+  color: #0968b6;
+  margin-right: 5%;
+  border: 1px solid;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 0 2% 0 0;
+}
+
+header .mobile-nav .bars-active {
+  padding: 0 0 0 2% !important;
+}
+
+header .mobile-nav .bars-active:before {
+  content: "\f0da";
+  -webkit-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+}
+
+header .mobile-nav .nav-closed {
+  width: 0%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  background: seashell;
+  -webkit-transition: visibiity 0.3s, linear 0.4s;
+  transition: visibiity 0.3s, linear 0.4s;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+header .mobile-nav .nav-open {
+  height: 100vh;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  background: #c1c1db;
+  -webkit-transition: visibiity 0.3s, linear 0.5s;
+  transition: visibiity 0.3s, linear 0.5s;
+  -webkit-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+#home {
+  width: 100%;
+  border: 1px solid red;
+}
+
+#home .profile {
+  height: 50%;
+  padding: 3%;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url("/images/header1.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ffbaba;
+  line-height: 2em;
+}
+
+#home .profile img {
+  width: 45%;
+  border-radius: 100%;
+}
+
+#home .profile span {
+  color: white;
+}
+
+#home .profile p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+#home .profile .social-icons,
+#home .profile .resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  margin: 10px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .profile .social-icons li,
+#home .profile .las.la-arrow-alt-circle-right {
+  font-size: 2em;
+  margin-left: 5%;
+  color: white;
+}
+
+#home .skills {
+  padding: 5%;
+  line-height: 2em;
+}
+
+#home .skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .skills ul li {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home .skills ul i {
+  font-size: 1.5em;
+  margin-right: 5%;
+}
+
+/* *******************************************
+****** PROJECTS PAGE 
+******************************************* */
+/* *******************************************
+****** CONTACT PAGE 
+******************************************* */
+/* *******************************************
+****** MOBILE MENU
+******************************************* */
+/* *******************************************
+****** TABLET VIEW 
+******************************************* */
+/* *******************************************
+****** DESKTOP VIEW 
+******************************************* */
+/* *******************************************
+****** FORMS STYLE
+******************************************* */
+/*# sourceMappingURL=style.css.map */

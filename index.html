@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Anny Ng Portfolio</title>
+
+    <!-- ***************************JQUERY*************************************** -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- *****************************BOOTSTRAP 4.5********************************** -->
+    <!----------------- Bootstrap CSS -------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ************************FONT/LINE AWESOME**************************************** -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- ************************YOUR CODE**************************************** -->
+    <script src="./js/app.js" defer></script>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font-mfizz.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio</h1>
+
+      <nav class="mobile-nav">
+        <div class="nav-icon">
+          <!-- <i class="las la-caret-left"></i> -->
+          <i class="fas fa-caret-left"></i>
+        </div>
+
+        <ul class="nav-closed">
+          <li>
+            <a href="#home"><h2>Home</h2></a>
+          </li>
+          <li>
+            <a href="#projets"><h2>Projects</h2></a>
+          </li>
+          <li>
+            <a href="#contat"><h2>Contact</h2></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="profile">
+          <img src="./images/profile.jpg" alt="profile image" />
+          <h2>hello i'm <span>Anny</span></h2>
+          <p>a Full-Stack Developer + freelancer seeking new opportunities</p>
+
+          <ul class="social-icons">
+            <li><i class="lab la-github"></i></li>
+            <li><i class="lab la-linkedin-in"></i></li>
+            <li><i class="lab la-codepen"></i></li>
+          </ul>
+
+          <div class="resume">
+            <p>My Resume</p>
+            <i class="las la-arrow-alt-circle-right"></i>
+          </div>
+        </div>
+
+        <div class="skills">
+          <ul>
+            <li><i class="icon-reactjs"></i> React.js</li>
+            <li><i class="icon-html5-alt"></i> HTML 5</li>
+            <li><i class="icon-css3"></i> CSS3</li>
+            <li><i class="icon-sass"></i> SASS</li>
+            <li><i class="icon-bootstrap"></i> Bootstrap</li>
+            <li><i class="icon-jquery"></i> jQuery</li>
+            <li><i class="icon-javascript-alt"></i> JavaScript</li>
+            <li><i class="icon-nodejs"></i> Node.js</li>
+            <li><i class="icon-mongodb"></i> MongoDB</li>
+            <li><i class="icon-postgres-alt"></i> PostgresSQL</li>
+            <li><i class="icon-mysql-alt"></i> MySQL</li>
+            <li><i class="icon-ruby-on-rails"></i> Ruby on Rails</li>
+            <li><i class="icon-nodejs"></i> Express.js</li>
+            <li><i class="icon-laravel"></i> Laravel</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section id="projects">
+        <div class="gallery"></div>
+      </section> -->
+
+      <!-- <section id="contact">
+        <h1>Drop me a note!</h1>
+
+        <a
+          href="https://docs.google.com/document/d/1ibwzQOM6vVxF5qtzTqhvt2i0uFL74TPSEbox18xvAAg/edit?usp=sharing"
+          >My Resume</a
+        >
+
+        <form
+          accept-charset="utf-8"
+          action="https://formspree.io/f/xbjppgew"
+          method="post"
+        >
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="First and Last"
+            required=""
+          />
+
+          <label for="email-address">Email Address</label>
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@domain.tld"
+            required=""
+          />
+          <label for="message">Message</label>
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Enter message here."
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+
+          <input id="submit-btn" type="submit" value="Submit" />
+        </form>
+      </section> -->
+    </main>
+  </body>
+</html>
