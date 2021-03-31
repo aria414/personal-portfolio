@@ -285,12 +285,12 @@ main {
 }
 
 #projects .gallery .gal-item .item-descr h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
 #projects .gallery .gal-item .item-descr p {
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 #projects .gallery .gal-item .item-descr .item-desc-text {
@@ -302,7 +302,7 @@ main {
 }
 
 #projects .gallery .gal-item .item-descr .item-code-links a {
-  font-size: 2em;
+  font-size: 1.5em;
   color: red;
   text-align: center;
 }
