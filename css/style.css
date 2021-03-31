@@ -61,7 +61,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.8);
+  background: white;
 }
 
 header h1 {
@@ -69,7 +69,7 @@ header h1 {
   font-size: 2em;
   font-style: italic;
   font-weight: 300;
-  color: white;
+  color: #7ebfd8d6;
   padding: 2% 0 0 2%;
 }
 
@@ -95,9 +95,8 @@ header .mobile-nav .las {
 
 header .mobile-nav .fas.fa-caret-left {
   font-size: 3em;
-  background: rgba(0, 0, 0, 0.7);
   text-align: center;
-  color: white;
+  color: #64b3d2d6;
   width: 100%;
   height: 100%;
 }
@@ -117,7 +116,7 @@ header .mobile-nav .nav-closed {
   height: 0px;
   overflow: hidden;
   text-align: center;
-  background: seashell;
+  background: white;
   -webkit-transition: visibiity 0.3s, linear 0.4s;
   transition: visibiity 0.3s, linear 0.4s;
   position: absolute;
@@ -125,12 +124,18 @@ header .mobile-nav .nav-closed {
   right: 0;
 }
 
+header .mobile-nav .nav-closed a {
+  color: black;
+  text-decoration: none;
+  line-height: 2;
+}
+
 header .mobile-nav .nav-open {
   height: 100vh;
   width: 100%;
   padding: 2%;
   text-align: center;
-  background: #c1c1db;
+  background: #dbdbdb;
   -webkit-transition: visibiity 0.3s, linear 0.5s;
   transition: visibiity 0.3s, linear 0.5s;
   -webkit-transition: all 750ms ease-in-out;
@@ -138,6 +143,12 @@ header .mobile-nav .nav-open {
   position: absolute;
   top: 60px;
   right: 0;
+}
+
+header .mobile-nav .nav-open a {
+  color: black;
+  text-decoration: none;
+  line-height: 2;
 }
 
 main {
@@ -254,9 +265,8 @@ main {
 
 #projects .gallery .gal-item {
   width: 90%;
-  margin: 0 auto 5% auto;
+  margin: 0 auto 10% auto;
   min-height: 380px;
-  border: 1px solid #979797;
   position: relative;
 }
 
@@ -266,26 +276,27 @@ main {
      object-fit: cover;
   margin-bottom: -3px;
   height: 350px;
+  border: 1px solid #b4b4b4;
 }
 
 #projects .gallery .gal-item .item-desc-text {
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   height: 350px;
   color: white;
   padding: 4%;
   line-height: 1.5;
   text-align: center;
   opacity: 0;
-  -webkit-transition: linear 100ms, opacity 100ms;
-  transition: linear 100ms, opacity 100ms;
+  -webkit-transition: linear 200ms, opacity 100ms;
+  transition: linear 200ms, opacity 100ms;
 }
 
 #projects .gallery .gal-item .item-desc-text:hover {
   opacity: 1;
-  -webkit-transition: linear 0s, opacity 100ms;
-  transition: linear 0s, opacity 100ms;
+  -webkit-transition: linear 200s, opacity 100ms;
+  transition: linear 200s, opacity 100ms;
 }
 
 #projects .gallery .gal-item .item-desc-text p {
@@ -293,30 +304,21 @@ main {
 }
 
 #projects .gallery .gal-item .item-desc-text .item-code-links a {
-  color: white;
+  color: #81f9ff;
   font-size: 2em;
-  margin-right: 2%;
+  margin-right: 5%;
 }
 
 #projects .gallery .gal-item .item-descr {
-  background: #3cb367;
-  padding: 3% 4%;
+  padding: 3%;
   line-height: 1.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
+  color: black;
 }
 
 #projects .gallery .gal-item .item-descr h2 {
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 #projects .gallery .gal-item .item-descr p {
