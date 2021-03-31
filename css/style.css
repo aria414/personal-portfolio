@@ -36,7 +36,7 @@ font-family: 'Cormorant Infant', serif;
 ******************************************* */
 body {
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   font-family: "Inter", sans-serif;
 }
 
@@ -256,7 +256,8 @@ main {
   width: 90%;
   margin: 0 auto 5% auto;
   min-height: 380px;
-  border: 1px solid gray;
+  border: 1px solid #979797;
+  position: relative;
 }
 
 #projects .gallery .gal-item img {
@@ -265,12 +266,41 @@ main {
      object-fit: cover;
   margin-bottom: -3px;
   height: 350px;
-  border-bottom: 1px solid;
+}
+
+#projects .gallery .gal-item .item-desc-text {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  height: 350px;
+  color: white;
+  padding: 4%;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: linear 100ms, opacity 100ms;
+  transition: linear 100ms, opacity 100ms;
+}
+
+#projects .gallery .gal-item .item-desc-text:hover {
+  opacity: 1;
+  -webkit-transition: linear 0s, opacity 100ms;
+  transition: linear 0s, opacity 100ms;
+}
+
+#projects .gallery .gal-item .item-desc-text p {
+  margin-top: 15%;
+}
+
+#projects .gallery .gal-item .item-desc-text .item-code-links a {
+  color: white;
+  font-size: 2em;
+  margin-right: 2%;
 }
 
 #projects .gallery .gal-item .item-descr {
-  background: white;
-  padding: 2% 4%;
+  background: #3cb367;
+  padding: 3% 4%;
   line-height: 1.5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,7 +311,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
+  color: white;
 }
 
 #projects .gallery .gal-item .item-descr h2 {
@@ -291,20 +321,6 @@ main {
 
 #projects .gallery .gal-item .item-descr p {
   font-size: 0.8em;
-}
-
-#projects .gallery .gal-item .item-descr .item-desc-text {
-  width: 90%;
-}
-
-#projects .gallery .gal-item .item-descr .item-code-links {
-  text-align: right;
-}
-
-#projects .gallery .gal-item .item-descr .item-code-links a {
-  font-size: 1.5em;
-  color: black;
-  text-align: center;
 }
 
 /* *******************************************

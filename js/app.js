@@ -76,17 +76,61 @@ $.ajax(
     $codeLinkDiv.append($livebtn);
     $codeLinkDiv.append($github);
 
-    //Append the project name and description to <div class="item-desc-text">
-    $itemDescText.append($name);
-    //$itemDescText.append($desc);
+    //Append the project name and description to <div class="item-descr">
+    $itemDescrDiv.append($name);
 
-    //Append the item-desc-text inside div the item-descr div
-    $itemDescrDiv.append($itemDescText);
+    // <div class="item-desc-text">
+    //   <p>
+    //     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
+    //     error. Vero cumque recusandae laborum eveniet nulla aperiam .
+    //   </p>
+    //   <div class="item-code-links">
+    //     <a href="https://seir-react-fgo.netlify.app/" target="_blank"
+    //       ><i class="lar la-file-alt"> </i></a
+    //     ><a
+    //       href="https://github.com/aria414/seir-react-fgo"
+    //       target="_blank"
+    //       ><i class="las la-external-link-alt"></i
+    //     ></a>
+    //   </div>
+    // </div>
+    $itemDescText.append($desc);
+    $itemDescText.append($codeLinkDiv);
+
     //Append the  <div class="item-code-links"> to the <div class="item-descr">
-    $itemDescrDiv.append($codeLinkDiv);
+    //$itemDescrDiv.append($codeLinkDiv);
 
-    //Put the elements inside the section
+    //Append image inside section
     $section.append($img);
+
+    //Append <div class="item-desc-text"> inside the <section class="gal-item">
+    $section.append($itemDescText);
+
+    //Append <div class="item-descr"> to section
     $section.append($itemDescrDiv);
   });
 });
+
+// <section class="gal-item">
+// <img src="./images/fgoreact.jpg" />
+
+// <div class="item-desc-text">
+//   <p>
+//     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
+//     error. Vero cumque recusandae laborum eveniet nulla aperiam .
+//   </p>
+//   <div class="item-code-links">
+//     <a href="https://seir-react-fgo.netlify.app/" target="_blank"
+//       ><i class="lar la-file-alt"> </i></a
+//     ><a
+//       href="https://github.com/aria414/seir-react-fgo"
+//       target="_blank"
+//       ><i class="las la-external-link-alt"></i
+//     ></a>
+//   </div>
+// </div>
+
+// <div class="item-descr">
+//   <h2>Fate/Grand Order Infopedia</h2>
+// </div>
+// </section>
