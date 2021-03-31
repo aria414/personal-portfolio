@@ -61,7 +61,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.9);
+  background: #7ebfd8d6;
 }
 
 header h1 {
@@ -69,7 +69,7 @@ header h1 {
   font-size: 2.3em;
   font-style: italic;
   font-weight: 300;
-  color: #9fcee0;
+  color: white;
   padding: 1% 0 0 1%;
 }
 
@@ -95,7 +95,7 @@ header .mobile-nav .las {
 
 header .mobile-nav .fas.fa-caret-left {
   font-size: 3em;
-  background: #9fcee0;
+  background: #64b3d2d6;
   text-align: center;
   color: white;
   width: 100%;
@@ -255,15 +255,57 @@ main {
 
 #projects .gallery .gal-item {
   width: 85%;
-  border: 1px solid blue;
-  max-height: 500px;
-  margin: 0 auto;
+  margin: 0 auto 5% auto;
+  min-height: 380px;
 }
 
 #projects .gallery .gal-item img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: -3px;
+  height: 350px;
+}
+
+#projects .gallery .gal-item .item-descr {
+  background: #274b87;
+  background: -webkit-gradient(linear, left top, left bottom, from(#274b87), color-stop(100%, #00214a), to(black));
+  background: linear-gradient(180deg, #274b87 0%, #00214a 100%, black 100%);
+  padding: 2% 4%;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+#projects .gallery .gal-item .item-descr h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+#projects .gallery .gal-item .item-descr p {
+  font-size: 0.9em;
+}
+
+#projects .gallery .gal-item .item-descr .item-desc-text {
+  width: 90%;
+}
+
+#projects .gallery .gal-item .item-descr .item-code-links {
+  text-align: right;
+}
+
+#projects .gallery .gal-item .item-descr .item-code-links a {
+  font-size: 2em;
+  color: white;
+  text-align: center;
 }
 
 /* *******************************************

@@ -51,25 +51,42 @@ $.ajax(
 
     //create the elements and set their attributes.
     const $img = $("<img>").attr("src", item.img);
-    const $name = $("<h2>").attr("class", "lable").text(item.name);
-    const $desc = $("<p>").attr("class", "largedesc").text(item.description);
+    const $name = $("<h2>").text(item.name);
+    const $desc = $("<p>").text(item.description);
 
-    //create a div to hold the buttons
-    const $div = $("<div>");
-    const $livebtn = $("<button>")
-      .attr("class", "code-btn")
-      .html(`<a href="${item.live}"  target="_blank">Live</a>`);
-    const $github = $("<button>")
-      .attr("class", "code-btn")
-      .html(`<a href="${item.github}"  target="_blank">Code</a>`);
+    //Create a div to hold the item descriptions <div class="item-descr">
+    const $itemDescrDiv = $("<div>").attr("class", "item-descr");
 
-    $div.append($livebtn);
-    $div.append($github);
+    //create a div to hold the code links <div class="item-code-links">
+    const $codeLinkDiv = $("<div>").attr("class", "item-code-links");
+
+    //Create an <a> </a> to hold the Git and Live links
+    const $livebtn = $(
+      `<a href=${item.live}><i class="lar la-file-alt"> </i></a>`
+    ).attr("target", "_blank");
+
+    const $github = $(
+      `<a href=${item.github}><i class="las la-external-link-alt"></a>`
+    ).attr("target", "_blank");
+
+    //Create a div to hold the h2 and p part of the item-descr
+    const $itemDescText = $("<div>").attr("class", "item-desc-text");
+
+    //Append the Live and Github links to the <div class="item-code-links">
+    $codeLinkDiv.append($livebtn);
+    $codeLinkDiv.append($github);
+
+    //Append the project name and description to <div class="item-desc-text">
+    $itemDescText.append($name);
+    $itemDescText.append($desc);
+
+    //Append the item-desc-text inside div the item-descr div
+    $itemDescrDiv.append($itemDescText);
+    //Append the  <div class="item-code-links"> to the <div class="item-descr">
+    $itemDescrDiv.append($codeLinkDiv);
 
     //Put the elements inside the section
     $section.append($img);
-    $section.append($name);
-    $section.append($desc);
-    $section.append($div);
+    $section.append($itemDescrDiv);
   });
 });

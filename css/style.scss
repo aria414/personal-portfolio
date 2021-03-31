@@ -64,14 +64,15 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.9);
+  //background: rgba(255, 255, 255, 0.9);
+  background: #7ebfd8d6;
 
   h1 {
     font-family: "Cormorant", serif;
     font-size: 2.3em;
     font-style: italic;
     font-weight: 300;
-    color: #9fcee0;
+    color: white;
     padding: 1% 0 0 1%;
   }
 
@@ -96,7 +97,7 @@ header {
 
     .fas.fa-caret-left {
       font-size: 3em;
-      background: #9fcee0;
+      background: #64b3d2d6;
       text-align: center;
       color: white;
       width: 100%;
@@ -234,13 +235,51 @@ main {
 
     .gal-item {
       width: 85%;
-      border: 1px solid blue;
-      max-height: 500px;
-      margin: 0 auto;
+      margin: 0 auto 5% auto;
+      min-height: 380px;
 
       img {
         width: 100%;
         object-fit: cover;
+        margin-bottom: -3px;
+        height: 350px;
+      }
+
+      .item-descr {
+        background: rgb(39, 75, 135);
+        background: linear-gradient(
+          180deg,
+          rgba(39, 75, 135, 1) 0%,
+          rgba(0, 33, 74, 1) 100%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        padding: 2% 4%;
+        line-height: 1.5;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+
+        h2 {
+          font-size: 1.3em;
+          font-weight: 400;
+        }
+        p {
+          font-size: 0.9em;
+        }
+
+        .item-desc-text {
+          width: 90%;
+        }
+
+        .item-code-links {
+          text-align: right;
+          a {
+            font-size: 2em;
+            color: white;
+            text-align: center;
+          }
+        }
       }
     }
   }
