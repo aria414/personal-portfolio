@@ -39,9 +39,10 @@ font-family: 'Cormorant Infant', serif;
 ******************************************* */
 
 body {
-  font-family: "Roboto", sans-serif;
+  //@debug: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 200;
+  font-family: "Inter", sans-serif;
 }
 
 h2 {
@@ -64,16 +65,16 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  //background: rgba(255, 255, 255, 0.9);
-  background: #7ebfd8d6;
+  background: rgba(0, 0, 0, 0.8);
+  //background: #7ebfd8d6;
 
   h1 {
     font-family: "Cormorant", serif;
-    font-size: 2.3em;
+    font-size: 2em;
     font-style: italic;
     font-weight: 300;
     color: white;
-    padding: 1% 0 0 1%;
+    padding: 2% 0 0 2%;
   }
 
   .mobile-nav {
@@ -97,7 +98,8 @@ header {
 
     .fas.fa-caret-left {
       font-size: 3em;
-      background: #64b3d2d6;
+      //background: #64b3d2d6;
+      background: rgba(0, 0, 0, 0.7);
       text-align: center;
       color: white;
       width: 100%;
@@ -257,10 +259,10 @@ main {
 
         h2 {
           font-size: 1.2em;
-          font-weight: 400;
+          font-weight: 500;
         }
         p {
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
 
         .item-desc-text {
@@ -271,7 +273,7 @@ main {
           text-align: right;
           a {
             font-size: 1.5em;
-            color: red;
+            color: black;
             text-align: center;
           }
         }

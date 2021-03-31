@@ -78,7 +78,7 @@ $.ajax(
 
     //Append the project name and description to <div class="item-desc-text">
     $itemDescText.append($name);
-    $itemDescText.append($desc);
+    //$itemDescText.append($desc);
 
     //Append the item-desc-text inside div the item-descr div
     $itemDescrDiv.append($itemDescText);
