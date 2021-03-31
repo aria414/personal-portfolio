@@ -250,13 +250,13 @@ main {
 #projects .gallery {
   margin-top: 3%;
   padding: 3%;
-  border: 1px solid green;
 }
 
 #projects .gallery .gal-item {
-  width: 85%;
+  width: 90%;
   margin: 0 auto 5% auto;
   min-height: 380px;
+  border: 1px solid gray;
 }
 
 #projects .gallery .gal-item img {
@@ -265,12 +265,11 @@ main {
      object-fit: cover;
   margin-bottom: -3px;
   height: 350px;
+  border-bottom: 1px solid;
 }
 
 #projects .gallery .gal-item .item-descr {
-  background: #274b87;
-  background: -webkit-gradient(linear, left top, left bottom, from(#274b87), color-stop(100%, #00214a), to(black));
-  background: linear-gradient(180deg, #274b87 0%, #00214a 100%, black 100%);
+  background: white;
   padding: 2% 4%;
   line-height: 1.5;
   display: -webkit-box;
@@ -282,7 +281,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: black;
 }
 
 #projects .gallery .gal-item .item-descr h2 {
@@ -304,7 +303,7 @@ main {
 
 #projects .gallery .gal-item .item-descr .item-code-links a {
   font-size: 2em;
-  color: white;
+  color: red;
   text-align: center;
 }
 
