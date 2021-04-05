@@ -8,7 +8,7 @@
 
 $(".nav-icon").click(function () {
   $(".nav-closed").toggleClass("nav-open");
-  $(".fas.fa-caret-left").toggleClass("bars-active");
+  $(".las.la-bars").toggleClass("bars-active");
 });
 
 //   <i class="las la-window-close"></i>
@@ -62,11 +62,11 @@ $.ajax(
 
     //Create an <a> </a> to hold the Git and Live links
     const $livebtn = $(
-      `<a href=${item.live}><i class="lab la-github-square"> </i></a>`
+      `<a href=${item.live}><i class="fab fa-github-square"> </i></a>`
     ).attr("target", "_blank");
 
     const $github = $(
-      `<a href=${item.github}><i class="las la-external-link-square-alt"></a>`
+      `<a href=${item.github}><i class="fas fa-external-link-square-alt"></a>`
     ).attr("target", "_blank");
 
     //Create a div to hold the h2 and p part of the item-descr
@@ -95,7 +95,7 @@ $.ajax(
     //   </div>
     // </div>
     $itemDescText.append($desc);
-    $itemDescText.append($codeLinkDiv);
+    // $itemDescText.append($codeLinkDiv);
 
     //Append the  <div class="item-code-links"> to the <div class="item-descr">
     //$itemDescrDiv.append($codeLinkDiv);
@@ -106,8 +106,9 @@ $.ajax(
     //Append <div class="item-desc-text"> inside the <section class="gal-item">
     $section.append($itemDescText);
 
-    //Append <div class="item-descr"> to section
+    //Append <div class="item-descr"> with the title to section
     $section.append($itemDescrDiv);
+    $section.append($codeLinkDiv);
   });
 });
 
