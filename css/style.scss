@@ -61,22 +61,19 @@ p {
 ******************************************* */
 header {
   width: 100%;
-  height: 60px;
+  height: 70px;
   position: fixed;
   top: 0;
   z-index: 999;
   background: white;
-  //background: #7ebfd8d6;
-  //box-shadow: 0 1px 11px -3px #929292;
   border-bottom: 1px solid #68879b;
 
   h1 {
     font-family: "Cormorant", serif;
     font-size: 2em;
     font-style: italic;
-    font-weight: 300;
-    color: #7ebfd8d6;
-    padding: 2% 0 0 2%;
+    //color: #7ebfd8d6;
+    margin: 15px 0 0 15px;
     font-weight: 400;
   }
 
@@ -89,8 +86,8 @@ header {
 
     .nav-icon {
       width: 100px;
-      height: 60px;
-      padding: 0px;
+      height: 70px;
+      padding: 1% 0 0 0%;
       position: fixed;
       right: 0;
     }
@@ -102,7 +99,7 @@ header {
     .fas.fa-caret-left {
       font-size: 3em;
       text-align: center;
-      color: #64b3d2d6;
+      //color: #64b3d2d6;
       width: 100%;
       height: 100%;
     }
@@ -153,7 +150,7 @@ header {
   }
 }
 main {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 #home {
@@ -161,7 +158,7 @@ main {
 
   .profile {
     height: 50%;
-    padding: 3%;
+    padding: 5% 3%;
     background-image: url("../images/header1.jpg");
     background-size: cover;
     background-position: center;
@@ -170,7 +167,7 @@ main {
     line-height: 2em;
 
     img {
-      width: 45%;
+      width: 50%;
       border-radius: 100%;
     }
 
@@ -201,7 +198,7 @@ main {
   }
 
   .skills {
-    padding: 5%;
+    padding: 7% 5%;
     line-height: 3em;
 
     h2 {
@@ -243,11 +240,11 @@ main {
   }
 
   .gallery {
-    margin-top: 10%;
+    margin-top: 20%;
     padding: 3%;
 
     .gal-item {
-      width: 90%;
+      width: 100%;
       margin: 0 auto 10% auto;
       min-height: 380px;
       position: relative;
@@ -256,18 +253,18 @@ main {
         width: 100%;
         object-fit: cover;
         margin-bottom: -3px;
-        height: 350px;
-        border: 1px solid rgb(180, 180, 180);
+        height: 330px;
+        border: 1px solid #c8c8c8;
       }
 
       .item-desc-text {
         position: absolute;
         top: 0;
         background: rgba(0, 0, 0, 0.85);
-        height: 350px;
+        height: 330px;
         color: white;
         padding: 4%;
-        line-height: 1.5;
+        line-height: 1.3;
         text-align: center;
         opacity: 0;
         transition: linear 200ms, opacity 100ms;
@@ -276,12 +273,15 @@ main {
           opacity: 1;
           transition: linear 200s, opacity 100ms;
         }
+        .item-code-links {
+          margin-top: 2%;
+        }
         p {
           margin-top: 15%;
         }
 
         .item-code-links a {
-          color: #81f9ff;
+          color: #8bfffa;
           font-size: 2em;
           margin-right: 5%;
         }
@@ -295,7 +295,6 @@ main {
         h2 {
           font-size: 1em;
           font-weight: 600;
-          text-transform: uppercase;
         }
         p {
           font-size: 0.8em;
