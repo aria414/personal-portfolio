@@ -238,6 +238,8 @@ main {
     background-position: center;
     text-align: center;
     padding: 15%;
+    font-family: "Cormorant Infant", serif;
+    font-size: 1.4em;
   }
 
   .gallery {
@@ -303,7 +305,7 @@ main {
         display: flex;
         padding: 0%;
         a {
-          color: #9a9a9a;
+          color: #0081d9;
           font-size: 1.2em;
           /* margin-right: 25%; */
           border: 1px solid;
