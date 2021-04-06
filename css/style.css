@@ -324,7 +324,7 @@ main {
 }
 
 #projects .gallery .gal-item .item-descr h2 {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
 }
 
@@ -344,14 +344,15 @@ main {
 }
 
 #projects .gallery .gal-item .item-code-links a {
-  color: #959595;
+  color: #0078ca;
   font-size: 1.2em;
-  /* margin-right: 25%; */
+  margin-right: 3%;
   border: 1px solid;
   height: 38px;
   width: 50px;
   text-align: center;
   padding: 2%;
+  border-radius: 8px;
 }
 
 #projects .gallery .gal-item .item-code-links a:hover {
