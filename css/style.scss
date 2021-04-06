@@ -20,6 +20,7 @@ font-family: 'Cormorant Infant', serif;
   --main: black;
   --secondary: white;
   --accent: red;
+  --highlight: #ffbaba;
 
   /* FONTS */
   --title: serif;
@@ -31,7 +32,6 @@ font-family: 'Cormorant Infant', serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 2px solid gold; */
 }
 
 /* *******************************************
@@ -164,7 +164,7 @@ main {
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: #ffbaba;
+    color: var(--highlight);
     line-height: 2em;
 
     img {
@@ -265,6 +265,7 @@ main {
         position: absolute;
         top: 0;
         background: rgba(0, 0, 0, 0.85);
+        width: 100%;
         height: 330px;
         color: white;
         padding: 4%;
@@ -289,7 +290,7 @@ main {
         color: black;
 
         h2 {
-          font-size: 1em;
+          font-size: 0.8em;
           font-weight: 600;
         }
         p {
@@ -300,11 +301,19 @@ main {
       .item-code-links {
         margin-top: 2%;
         display: flex;
-        padding: 1% 7% 0 0;
+        padding: 0%;
         a {
-          color: #000000;
-          font-size: 1.5em;
-          margin-right: 25%;
+          color: #00bcd4;
+          font-size: 1.2em;
+          /* margin-right: 25%; */
+          border: 1px solid;
+          height: 35px;
+          width: 45px;
+          text-align: center;
+          padding: 6%;
+          &:hover {
+            color: black;
+          }
         }
       }
     }
