@@ -249,14 +249,17 @@ main {
 
 #projects .projects-header {
   height: 20%;
-  background-image: url("../images/flowers.jpg");
-  color: white;
+  /* background-image: url(../images/flowers.jpg); */
+  color: #aabfc9;
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 15%;
+  padding: 10%;
   font-family: "Cormorant Infant", serif;
-  font-size: 1.4em;
+  font-size: 3em;
+  border-top: 1px solid;
+  border-bottom: 1px double;
+  font-weight: 700;
 }
 
 #projects .gallery {

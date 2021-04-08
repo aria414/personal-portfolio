@@ -62,11 +62,11 @@ $.ajax(
 
     //Create an <a> </a> to hold the Git and Live links
     const $livebtn = $(
-      `<a href=${item.live}><i class="fab fa-github-square"> </i></a>`
+      `<a href=${item.live}><i class="fas fa-external-link-square-alt"></i></a>`
     ).attr("target", "_blank");
 
     const $github = $(
-      `<a href=${item.github}><i class="fas fa-external-link-square-alt"></a>`
+      `<a href=${item.github}><i class="fab fa-github-square"> </i></a>`
     ).attr("target", "_blank");
 
     //Create a div to hold the h2 and p part of the item-descr
