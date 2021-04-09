@@ -84,7 +84,7 @@ header .mobile-nav {
 header .mobile-nav .nav-icon {
   width: 100px;
   height: 70px;
-  padding: 1% 0 0 0%;
+  padding-top: 15px;
   position: fixed;
   right: 0;
 }
@@ -94,20 +94,20 @@ header .mobile-nav .las {
 }
 
 header .mobile-nav .las.la-bars {
-  font-size: 3em;
+  font-size: 2.2em;
   text-align: center;
   width: 100%;
   height: 100%;
 }
 
 header .mobile-nav .bars-active {
-  padding: 0 0 0 2% !important;
+  margin-top: -5px;
 }
 
 header .mobile-nav .bars-active:before {
   content: "x";
   font-family: "Robo", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 header .mobile-nav .nav-closed {
@@ -161,17 +161,19 @@ main {
 #home .profile {
   height: 50%;
   padding: 5% 3%;
-  background-image: url("../images/header1.jpg");
+  background-image: url(../images/header1.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
   color: var(--highlight);
   line-height: 2em;
+  min-height: 500px;
 }
 
 #home .profile img {
   width: 50%;
   border-radius: 100%;
+  border: 7px solid white;
 }
 
 #home .profile span {
@@ -181,6 +183,8 @@ main {
 #home .profile p {
   font-size: 1.1em;
   line-height: 1.5em;
+  margin-top: 20px;
+  margin-right: 15px;
 }
 
 #home .profile .social-icons,
@@ -192,7 +196,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: var(--highlight);
   margin: 10px auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -204,19 +208,26 @@ main {
   font-size: 2.5em;
   margin-left: 5%;
   color: white;
+  margin-top: 20px;
 }
 
 #home .skills {
-  padding: 7% 5%;
-  line-height: 3em;
+  line-height: 4em;
 }
 
 #home .skills h2 {
-  font-family: "Cormorant", serif;
-  font-size: 2em;
+  color: #aabfc9;
+  text-align: center;
+  padding: 10%;
+  font-family: "Cormorant Infant", serif;
+  font-size: 2.5em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-weight: 700;
 }
 
 #home .skills ul {
+  padding: 7% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,16 +259,13 @@ main {
 }
 
 #projects .projects-header {
-  height: 20%;
   /* background-image: url(../images/flowers.jpg); */
   color: #aabfc9;
-  background-size: cover;
-  background-position: center;
   text-align: center;
   padding: 10%;
   font-family: "Cormorant Infant", serif;
-  font-size: 3em;
-  border-top: 1px solid;
+  font-size: 2.5em;
+  border-top: 1px double;
   border-bottom: 1px double;
   font-weight: 700;
 }
@@ -327,7 +335,7 @@ main {
 }
 
 #projects .gallery .gal-item .item-descr h2 {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
 }
 
@@ -347,7 +355,7 @@ main {
 }
 
 #projects .gallery .gal-item .item-code-links a {
-  color: #0078ca;
+  color: #a5a5a5;
   font-size: 1.2em;
   margin-right: 3%;
   border: 1px solid;

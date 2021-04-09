@@ -87,7 +87,7 @@ header {
     .nav-icon {
       width: 100px;
       height: 70px;
-      padding: 1% 0 0 0%;
+      padding-top: 15px;
       position: fixed;
       right: 0;
     }
@@ -97,20 +97,20 @@ header {
     }
 
     .las.la-bars {
-      font-size: 3em;
+      font-size: 2.2em;
       text-align: center;
       width: 100%;
       height: 100%;
     }
     .bars-active {
-      padding: 0 0 0 2% !important;
+      margin-top: -5px;
     }
 
     .bars-active:before {
       //content: "\f0da";
       content: "x";
       font-family: "Robo", sans-serif;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     .nav-closed {
@@ -160,16 +160,18 @@ main {
   .profile {
     height: 50%;
     padding: 5% 3%;
-    background-image: url("../images/header1.jpg");
+    background-image: url(../images/header1.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
     color: var(--highlight);
     line-height: 2em;
+    min-height: 500px;
 
     img {
       width: 50%;
       border-radius: 100%;
+      border: 7px solid white;
     }
 
     span {
@@ -179,6 +181,8 @@ main {
     p {
       font-size: 1.1em;
       line-height: 1.5em;
+      margin-top: 20px;
+      margin-right: 15px;
     }
 
     .social-icons,
@@ -186,7 +190,7 @@ main {
       display: flex;
       width: 60%;
       justify-content: center;
-      color: white;
+      color: var(--highlight);
       margin: 10px auto;
       align-items: center;
     }
@@ -195,19 +199,26 @@ main {
       font-size: 2.5em;
       margin-left: 5%;
       color: white;
+      margin-top: 20px;
     }
   }
 
   .skills {
-    padding: 7% 5%;
-    line-height: 3em;
+    line-height: 4em;
 
     h2 {
-      font-family: "Cormorant", serif;
-      font-size: 2em;
+      color: #aabfc9;
+      text-align: center;
+      padding: 10%;
+      font-family: "Cormorant Infant", serif;
+      font-size: 2.5em;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      font-weight: 700;
     }
 
     ul {
+      padding: 7% 5%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -231,16 +242,13 @@ main {
   width: 100%;
 
   .projects-header {
-    height: 20%;
     /* background-image: url(../images/flowers.jpg); */
     color: #aabfc9;
-    background-size: cover;
-    background-position: center;
     text-align: center;
     padding: 10%;
     font-family: "Cormorant Infant", serif;
-    font-size: 3em;
-    border-top: 1px solid;
+    font-size: 2.5em;
+    border-top: 1px double;
     border-bottom: 1px double;
     font-weight: 700;
   }
@@ -296,7 +304,7 @@ main {
         color: black;
 
         h2 {
-          font-size: 1em;
+          font-size: 0.9em;
           font-weight: 600;
         }
         p {
@@ -312,8 +320,8 @@ main {
         padding: 0% 2%;
         align-items: center;
         a {
-          //color: #959595;
-          color: #0078ca;
+          //color: #0078ca;
+          color: #a5a5a5;
           font-size: 1.2em;
           margin-right: 3%;
           border: 1px solid;
