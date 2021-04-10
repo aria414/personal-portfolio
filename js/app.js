@@ -1,17 +1,27 @@
 ////////////////////////////////////////////
 // Toggle menu button
 ////////////////////////////////////////////
-// $(".nav-icon").click(function () {
-//   $(".nav-closed").toggleClass("nav-open");
-//   $(".las.la-caret-left").toggleClass("bars-active");
-// });
 
 $(".nav-icon").click(function () {
   $(".nav-closed").toggleClass("nav-open");
   $(".las.la-bars").toggleClass("bars-active");
 });
+////////////////////////////////////////////
+// Submit button
+////////////////////////////////////////////
 
-//   <i class="las la-window-close"></i>
+$("#submit").click(function () {
+  if (
+    !$("#full-name").val() ||
+    !$("#email-address").val() ||
+    !$("#message").val()
+  ) {
+    alert("Fill in the boxes!");
+  } else {
+    $("#formspree").submit();
+  }
+});
+
 ////////////////////////////////////////////
 //PULL AND RENDER DATA FROM GOOGLE SHEET
 ////////////////////////////////////////////

@@ -45,6 +45,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+h1 {
+  font-size: 2.5em;
+}
 h2 {
   font-size: 2em;
 }
@@ -132,7 +135,7 @@ header {
 
     .nav-open {
       height: 100vh;
-      width: 100%;
+      width: 60%;
       padding: 2%;
       text-align: center;
       background: rgb(219, 219, 219);
@@ -152,6 +155,21 @@ header {
 }
 main {
   margin-top: 70px;
+}
+
+.projects-header,
+.skills,
+#contact {
+  h2 {
+    color: #aabfc9;
+    text-align: center;
+    padding: 8%;
+    font-family: "Cormorant Infant", serif;
+    font-size: 3em;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-weight: 700;
+  }
 }
 
 #home {
@@ -206,17 +224,6 @@ main {
   .skills {
     line-height: 4em;
 
-    h2 {
-      color: #aabfc9;
-      text-align: center;
-      padding: 8%;
-      font-family: "Cormorant Infant", serif;
-      font-size: 3em;
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      font-weight: 700;
-    }
-
     ul {
       padding: 7% 5%;
       display: flex;
@@ -238,21 +245,11 @@ main {
   }
 }
 
+/* *******************************************
+****** PROJECTS PAGE 
+******************************************* */
 #projects {
   width: 100%;
-
-  .projects-header {
-    color: #aabfc9;
-    text-align: center;
-    padding: 8%;
-    font-family: "Cormorant Infant", serif;
-    border-top: 1px double;
-    border-bottom: 1px double;
-    font-weight: 700;
-    h2 {
-      font-size: 3em;
-    }
-  }
 
   .gallery {
     margin-top: 20%;
@@ -339,14 +336,74 @@ main {
     }
   }
 }
-
-/* *******************************************
-****** PROJECTS PAGE 
-******************************************* */
-
 /* *******************************************
 ****** CONTACT PAGE 
 ******************************************* */
+#contact {
+  width: 100%;
+
+  .contact-container {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    margin: 0 auto;
+    background-image: url("https://images.unsplash.com/photo-1587608684699-8afac4c6c88c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    form {
+      height: 80%;
+
+      input,
+      textarea {
+        display: block;
+        width: 80%;
+        height: 40px;
+        margin: 0 auto 5%;
+        border: 2px solid #6d6d6d;
+        padding: 2%;
+        // box-shadow: 2px 3px 5px -3px #cac7bd;
+      }
+
+      textarea {
+        height: 300px;
+      }
+
+      #submit {
+        font-size: 2em;
+      }
+
+      .submit-btn {
+        color: white;
+        text-align: right;
+        margin-right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        p {
+          color: var(--highlight);
+          margin-right: 20px;
+        }
+      }
+    }
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #676c74;
+      opacity: 0.8; /* Firefox */
+      font-family: "Inter", sans-serif;
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #77859e;
+      font-family: "Inter", sans-serif;
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #77859e;
+      font-family: "Inter", sans-serif;
+    }
+  }
+}
 
 /* *******************************************
 ****** MOBILE MENU

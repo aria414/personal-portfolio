@@ -110,54 +110,55 @@
         <div class="gallery"></div>
       </section>
 
-      <!-- <section id="contact">
-        <h1>Drop me a note!</h1>
+      <section id="contact">
+        <h2>CONTACT</h2>
 
-        <a
-          href="https://docs.google.com/document/d/1ibwzQOM6vVxF5qtzTqhvt2i0uFL74TPSEbox18xvAAg/edit?usp=sharing"
-          >My Resume</a
-        >
+        <div class="contact-container">
+          <form
+            id="formspree"
+            accept-charset="utf-8"
+            action="https://formspree.io/f/xbjppgew"
+            method="post"
+          >
+            <div id="name">
+              <!-- <label for="full-name">Full Name</label> -->
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                placeholder="Name"
+                required=""
+              />
+            </div>
+            <div id="email">
+              <!-- <label for="email-address">Email Address</label> -->
+              <input
+                type="email"
+                name="_replyto"
+                id="email-address"
+                placeholder="Email"
+                required=""
+              />
+            </div>
+            <div>
+              <!-- <label for="message">Message</label> -->
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                placeholder="Enter message here."
+                required=""
+              ></textarea>
+            </div>
+            <div class="submit-btn">
+              <p>Send Message</p>
+              <i id="submit" class="las la-arrow-alt-circle-right"></i>
+            </div>
 
-        <form
-          accept-charset="utf-8"
-          action="https://formspree.io/f/xbjppgew"
-          method="post"
-        >
-          <label for="full-name">Full Name</label>
-          <input
-            type="text"
-            name="name"
-            id="full-name"
-            placeholder="First and Last"
-            required=""
-          />
-
-          <label for="email-address">Email Address</label>
-          <input
-            type="email"
-            name="_replyto"
-            id="email-address"
-            placeholder="email@domain.tld"
-            required=""
-          />
-          <label for="message">Message</label>
-          <textarea
-            rows="5"
-            name="message"
-            id="message"
-            placeholder="Enter message here."
-            required=""
-          ></textarea>
-          <input
-            type="hidden"
-            name="_subject"
-            id="email-subject"
-            value="Contact Form Submission"
-          />
-
-          <input id="submit-btn" type="submit" value="Submit" />
-        </form>
-      </section> -->
+            <!-- <input id="submit-btn" type="submit" value="submit" /> -->
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
