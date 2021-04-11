@@ -149,6 +149,10 @@ header .mobile-nav .nav-open {
   right: 0;
 }
 
+main {
+  margin-top: 70px;
+}
+
 .projects-header h2,
 .skills h2,
 #contact h2 {
@@ -164,7 +168,6 @@ header .mobile-nav .nav-open {
 
 #home {
   width: 100%;
-  padding-top: 70px;
 }
 
 #home .profile {
@@ -258,7 +261,6 @@ header .mobile-nav .nav-open {
 ******************************************* */
 #projects {
   width: 100%;
-  padding-top: 70px;
 }
 
 #projects .gallery {
@@ -366,7 +368,6 @@ header .mobile-nav .nav-open {
 ******************************************* */
 #contact {
   width: 100%;
-  padding-top: 70px;
 }
 
 #contact h3,
