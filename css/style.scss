@@ -341,14 +341,20 @@ main {
 ******************************************* */
 #contact {
   width: 100%;
+  h3,
+  p {
+    padding: 5% 10%;
+    line-height: 1.5;
+  }
 
   .contact-container {
     width: 100%;
     height: 100%;
     padding: 3%;
     margin: 0 auto;
-    background-image: url("https://images.unsplash.com/photo-1587608684699-8afac4c6c88c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+    //background-image: url("https://images.unsplash.com/photo-1587608684699-8afac4c6c88c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
     background-size: cover;
+
     form {
       height: 80%;
 
@@ -372,14 +378,14 @@ main {
       }
 
       .submit-btn {
-        color: white;
+        color: black;
         text-align: right;
         margin-right: 10%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         p {
-          color: var(--highlight);
+          color: #d60000;
           margin-right: 20px;
         }
       }
