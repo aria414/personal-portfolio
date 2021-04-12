@@ -1,3 +1,6 @@
+////////////////////////////////////////////
+// Function to make mobile nav scroll to the ID. top - 70 because I have a fixed nav at 70px height. Need to scroll to that offset
+////////////////////////////////////////////
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -27,18 +30,24 @@ $('a[href*="#"]')
 $(".nav-icon").click(function () {
   $(".nav-closed").toggleClass("nav-open");
   $(".las.la-bars").toggleClass("bars-active");
+  $(".overlay").toggleClass("overlay-on");
+});
+
+$(".nav-closed a").click(() => {
+  $(".nav-closed").toggleClass("nav-open");
+  $(".overlay").toggleClass("overlay-on");
 });
 ////////////////////////////////////////////
 // Submit button
 ////////////////////////////////////////////
-
+//Check if the value of either one of the input boxes are empty. If empty, yell at user. Otherwise, submit the message.
 $("#submit").click(function () {
   if (
     !$("#full-name").val() ||
     !$("#email-address").val() ||
     !$("#message").val()
   ) {
-    alert("Fill in the boxes!");
+    alert("Fill in the input boxes!");
   } else {
     $("#formspree").submit();
   }
@@ -60,7 +69,6 @@ $.ajax(
   console.log(rawProjects);
 
   // Prettify our projects array
-
   const projects = rawProjects.map((project) => {
     return {
       //the name is stored in an gsx$name object with property $t
@@ -111,21 +119,6 @@ $.ajax(
     //Append the project name and description to <div class="item-descr">
     $itemDescrDiv.append($name);
 
-    // <div class="item-desc-text">
-    //   <p>
-    //     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
-    //     error. Vero cumque recusandae laborum eveniet nulla aperiam .
-    //   </p>
-    //   <div class="item-code-links">
-    //     <a href="https://seir-react-fgo.netlify.app/" target="_blank"
-    //       ><i class="lar la-file-alt"> </i></a
-    //     ><a
-    //       href="https://github.com/aria414/seir-react-fgo"
-    //       target="_blank"
-    //       ><i class="las la-external-link-alt"></i
-    //     ></a>
-    //   </div>
-    // </div>
     $itemDescText.append($desc);
     // $itemDescText.append($codeLinkDiv);
 
@@ -143,27 +136,3 @@ $.ajax(
     $section.append($codeLinkDiv);
   });
 });
-
-// <section class="gal-item">
-// <img src="./images/fgoreact.jpg" />
-
-// <div class="item-desc-text">
-//   <p>
-//     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
-//     error. Vero cumque recusandae laborum eveniet nulla aperiam .
-//   </p>
-//   <div class="item-code-links">
-//     <a href="https://seir-react-fgo.netlify.app/" target="_blank"
-//       ><i class="lar la-file-alt"> </i></a
-//     ><a
-//       href="https://github.com/aria414/seir-react-fgo"
-//       target="_blank"
-//       ><i class="las la-external-link-alt"></i
-//     ></a>
-//   </div>
-// </div>
-
-// <div class="item-descr">
-//   <h2>Fate/Grand Order Infopedia</h2>
-// </div>
-// </section>

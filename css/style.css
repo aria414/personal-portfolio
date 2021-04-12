@@ -56,6 +56,28 @@ p {
   font-size: 1em;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.overlay-on {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
 /* *******************************************
 ****** INDEX PAGE
 ******************************************* */
@@ -119,6 +141,7 @@ header .mobile-nav .nav-open a {
   color: black;
   text-decoration: none;
   line-height: 2;
+  font-size: 0.9em;
 }
 
 header .mobile-nav .nav-closed {
@@ -136,12 +159,10 @@ header .mobile-nav .nav-closed {
 
 header .mobile-nav .nav-open {
   height: 100vh;
-  width: 60%;
-  padding: 2%;
+  width: 50%;
+  padding: 7%;
   text-align: center;
   background: #dbdbdb;
-  -webkit-transition: visibiity 0.3s, linear 0.5s;
-  transition: visibiity 0.3s, linear 0.5s;
   -webkit-transition: all 750ms ease-in-out;
   transition: all 750ms ease-in-out;
   position: absolute;
@@ -403,7 +424,7 @@ main {
 }
 
 #contact .contact-container form #submit {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 #contact .contact-container form .submit-btn {
@@ -423,7 +444,8 @@ main {
 
 #contact .contact-container form .submit-btn p {
   color: #d60000;
-  margin-right: 20px;
+  margin-right: 3%;
+  padding: 0;
 }
 
 #contact .contact-container ::-webkit-input-placeholder {
@@ -471,9 +493,6 @@ main {
 }
 
 /* *******************************************
-****** MOBILE MENU
-******************************************* */
-/* *******************************************
 ****** TABLET VIEW 
 ******************************************* */
 @media screen and (min-width: 768px) {
@@ -512,11 +531,76 @@ main {
   #home .skills ul i {
     font-size: 2em;
   }
+  #projects .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #projects .gallery .gal-item {
+    width: 47%;
+  }
+  #contact p {
+    font-size: 1.2em;
+  }
+  #contact .contact-container {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    margin: 0 auto;
+    background-size: cover;
+  }
+  #contact .contact-container #submit {
+    font-size: 3em;
+  }
 }
 
 /* *******************************************
 ****** DESKTOP VIEW 
 ******************************************* */
+@media screen and (min-width: 1024px) {
+  .projects-header h2,
+  .skills h2,
+  #contact h2 {
+    padding: 1% 20%;
+    text-align: left;
+  }
+  #home .profile {
+    max-height: 500px;
+    font-size: larger;
+    padding: 0 15%;
+  }
+  #home .profile img {
+    width: 300px;
+    max-height: 300px;
+    margin-left: 5%;
+  }
+  #home .profile .profile-desc {
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 5%;
+  }
+  #home .profile .social-icons {
+    width: 140px;
+    margin-right: 20px;
+  }
+  #home .profile .resume {
+    width: 350px;
+  }
+  #home .skills ul {
+    padding: 3% 20%;
+  }
+  #home .skills ul li {
+    width: 25%;
+    font-size: 1.2em;
+  }
+}
+
 /* *******************************************
 ****** FORMS STYLE
 ******************************************* */
