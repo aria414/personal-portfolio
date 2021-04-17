@@ -70,10 +70,12 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   cursor: pointer;
+  display: none;
   opacity: 0;
   transition: opacity 0.3s;
 }
 .overlay-on {
+  display: block;
   opacity: 1;
   transition: opacity 0.3s;
 }
@@ -98,7 +100,9 @@ header {
     margin: 15px 0 0 15px;
     font-weight: 400;
   }
-
+  .desk-nav {
+    display: none;
+  }
   .mobile-nav {
     display: block;
     width: 100%;
@@ -276,7 +280,7 @@ main {
 
     .gal-item {
       width: 100%;
-      margin: 0 auto 10% auto;
+      margin: 3% auto;
       min-height: 380px;
       position: relative;
       display: flex;
@@ -368,7 +372,7 @@ main {
     line-height: 1.5;
   }
 
-  .contact-container {
+  .form-container {
     width: 100%;
     height: 100%;
     padding: 3%;
@@ -438,6 +442,14 @@ main {
 ******************************************* */
 
 @media screen and (min-width: 768px) {
+  .projects-header,
+  .skills,
+  #contact {
+    h2 {
+      padding: 5%;
+    }
+  }
+
   #home {
     .profile {
       text-align: left;
@@ -480,6 +492,7 @@ main {
     .gallery {
       display: flex;
       flex-wrap: wrap;
+      margin-top: 7%;
 
       .gal-item {
         width: 47%;
@@ -492,7 +505,7 @@ main {
       font-size: 1.2em;
     }
 
-    .contact-container {
+    .form-container {
       width: 100%;
       height: 100%;
       padding: 3%;
@@ -514,27 +527,60 @@ main {
   .skills,
   #contact {
     h2 {
-      padding: 1% 20%;
+      padding: 1% 10%;
       text-align: left;
     }
   }
 
+  header {
+    height: 90px;
+    h1 {
+      padding: 0 10%;
+      margin-top: 26px;
+    }
+    .mobile-nav {
+      display: none;
+    }
+
+    .desk-nav {
+      display: block;
+      width: 100%;
+      text-align: right;
+      position: fixed;
+      top: 0;
+
+      ul {
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        position: absolute;
+        right: 0;
+        padding: 26px 0;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+        }
+      }
+    }
+  }
   #home {
     .profile {
       max-height: 500px;
       font-size: larger;
-      padding: 0 15%;
+      padding: 0 10% 0 22%;
       img {
         width: 300px;
         max-height: 300px;
-        margin-left: 5%;
+        margin-left: 0%;
       }
 
       .profile-desc {
         width: 600px;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 5%;
+        margin-left: 10%;
       }
 
       .social-icons {
@@ -548,11 +594,46 @@ main {
 
     .skills {
       ul {
-        padding: 3% 20%;
+        padding: 3% 5%;
+        max-width: 1424px;
+        margin: 0 auto;
         li {
           width: 25%;
-          font-size: 1.2em;
+          font-size: 1.1em;
         }
+      }
+    }
+  }
+
+  #projects {
+    .gallery {
+      max-width: 1424px;
+      margin: 3% auto;
+      padding: 0px;
+
+      .gal-item {
+        width: 30%;
+        margin: 3% auto;
+      }
+    }
+  }
+
+  #contact {
+    .contact-container {
+      padding: 3% 0%;
+      max-width: 1424px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      .contact-blurb {
+        width: 45%;
+        padding: 5% 0px;
+      }
+
+      .form-container {
+        width: 45%;
+        margin: 0 5%;
       }
     }
   }

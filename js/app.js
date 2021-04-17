@@ -1,7 +1,9 @@
 ////////////////////////////////////////////
 // Function to make mobile nav scroll to the ID. top - 70 because I have a fixed nav at 70px height. Need to scroll to that offset
 ////////////////////////////////////////////
-$('a[href*="#"]')
+//select the links in .nav-closed class. .. $('a[href*="#"]')  --> Select all links with hashes
+$(".nav-closed a")
+  // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function (event) {
@@ -23,11 +25,34 @@ $('a[href*="#"]')
       }
     }
   });
+
+$(".desk-nav a")
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function (event) {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      if (target.length) {
+        event.preventDefault();
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - 90,
+          },
+          1000
+        );
+      }
+    }
+  });
 ////////////////////////////////////////////
 // Toggle menu button
 ////////////////////////////////////////////
 
-$(".nav-icon").click(function () {
+$(".nav-icon").click(() => {
   $(".nav-closed").toggleClass("nav-open");
   $(".las.la-bars").toggleClass("bars-active");
   $(".overlay").toggleClass("overlay-on");
@@ -35,6 +60,7 @@ $(".nav-icon").click(function () {
 
 $(".nav-closed a").click(() => {
   $(".nav-closed").toggleClass("nav-open");
+  $(".las.la-bars").toggleClass("bars-active");
   $(".overlay").toggleClass("overlay-on");
 });
 ////////////////////////////////////////////
