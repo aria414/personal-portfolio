@@ -384,6 +384,15 @@ main {
   color: black;
 }
 
+#projects .gallery .gal-item .item-code-links .completion {
+  border: 1px solid;
+  height: 38px;
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+
 /* *******************************************
 ****** CONTACT PAGE 
 ******************************************* */

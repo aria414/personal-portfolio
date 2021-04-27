@@ -103,6 +103,7 @@ $.ajax(
       description: project.gsx$description.$t,
       live: project.gsx$livelink.$t,
       github: project.gsx$githublink.$t,
+      progress: project.gsx$completion.$t,
     };
   });
   console.log("my beautiful array: ", projects);
@@ -119,6 +120,7 @@ $.ajax(
     const $img = $("<img>").attr("src", item.img);
     const $name = $("<h2>").text(item.name);
     const $desc = $("<p>").text(item.description);
+    const $progress = item.progress;
 
     //Create a div to hold the item descriptions <div class="item-descr">
     const $itemDescrDiv = $("<div>").attr("class", "item-descr");
@@ -138,18 +140,18 @@ $.ajax(
     //Create a div to hold the h2 and p part of the item-descr
     const $itemDescText = $("<div>").attr("class", "item-desc-text");
 
+    //Create a button to show completion rate.
+    const $completion = $("<div>").attr("class", "completion").text($progress);
+    console.log("Progress", $progress);
     //Append the Live and Github links to the <div class="item-code-links">
     $codeLinkDiv.append($livebtn);
     $codeLinkDiv.append($github);
+    $codeLinkDiv.append($completion);
 
     //Append the project name and description to <div class="item-descr">
     $itemDescrDiv.append($name);
 
     $itemDescText.append($desc);
-    // $itemDescText.append($codeLinkDiv);
-
-    //Append the  <div class="item-code-links"> to the <div class="item-descr">
-    //$itemDescrDiv.append($codeLinkDiv);
 
     //Append image inside section
     $section.append($img);
@@ -160,5 +162,7 @@ $.ajax(
     //Append <div class="item-descr"> with the title to section
     $section.append($itemDescrDiv);
     $section.append($codeLinkDiv);
+
+    //Add button to show if project is complete
   });
 });
